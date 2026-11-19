@@ -1,0 +1,25 @@
+{
+  "name": "Laravel Playground",
+  "dockerComposeFile": "../compose.yaml",
+  "service": "app",
+  "workspaceFolder": "/workspace/src",
+  "remoteUser": "app",
+  "updateRemoteUserUID": true,
+  "forwardPorts": [8181],
+  "portsAttributes": {
+    "8181": {
+      "label": "Laravel",
+      "onAutoForward": "openBrowser",
+      "visibility": "private"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "onecentlin.laravel-blade",
+        "alexcvzz.vscode-sqlite"
+      ]
+    }
+  }
+}
